@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  max-width: 320px;
+
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}

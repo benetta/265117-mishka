@@ -1,0 +1,22 @@
+.header-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-list__list-item {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.header-list__list-item a {
+  display: block;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 45px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}

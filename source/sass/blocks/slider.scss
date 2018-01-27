@@ -1,0 +1,37 @@
+.slider__item {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.slider__toggles {
+  display: flex;
+  margin-bottom: 37px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.slider__toggle {
+  flex-basis: 50%;
+  min-height: 52px;
+
+  padding: 0;
+
+  border: none;
+  background-color: rgb(255, 255, 255);
+  text-indent: -9999px;
+
+  cursor: pointer;
+}
+
+.slider__toggle--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-right: 1px solid rgb(236, 236, 236);
+}
+
+.slider__toggle--next {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
