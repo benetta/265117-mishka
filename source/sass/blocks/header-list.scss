@@ -1,15 +1,18 @@
-.header-list {
+.header-list,
+.user-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.header-list__list-item {
+.header-list__list-item,
+.user-list__list-item {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.header-list__list-item a {
+.header-list__list-item a,
+.user-list__list-item a {
   display: block;
 
   padding-top: 28px;
@@ -19,4 +22,23 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .header-list {
+    order: 2;
+    width: auto;
+  }
+
+  .header-list__list-item {
+    border-bottom: none;
+    width: 167px;
+  }
+
+  .header-list__list-item a {
+    padding: 0;
+    padding-top: 20px;
+
+    font-size: 15px;
+  }
 }

@@ -1,5 +1,4 @@
 .video {
-  min-width: 260px;
   min-height: 150px;
 
   display: flex;
@@ -24,4 +23,11 @@
   background-image: url("../img/icon-play.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .video {
+    order: -2;
+    min-height: 455px;
+  }
 }
