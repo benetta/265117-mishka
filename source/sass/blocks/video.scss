@@ -1,0 +1,27 @@
+.video {
+  min-width: 260px;
+  min-height: 150px;
+
+  display: flex;
+  justify-content: center;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-color: rgb(231, 231, 231);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video__control {
+  width: 101px;
+  height: 77px;
+
+  align-self: center;
+
+  text-indent: -9999px;
+  border: none;
+  background-color: transparent;
+
+  background-image: url("../img/icon-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

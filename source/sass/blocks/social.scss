@@ -1,0 +1,34 @@
+.social {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 25px;
+
+  list-style: none;
+
+  max-width: 141px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+
+  text-indent: -9999px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link--insta {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social__link--fb {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social__link--tw {
+  background-image: url("../img/icon-twitter.svg");
+}

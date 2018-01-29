@@ -1,0 +1,59 @@
+.contacts {
+  padding-top: 43px;
+  padding-bottom: 39px;
+}
+
+.contacts__container {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  margin-bottom: 35px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__list tbody {
+  vertical-align: top;
+}
+
+.contacts__key {
+  min-width: 76px;
+  padding-bottom: 20px;
+}
+
+.contacts__value a {
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(98, 209, 186);
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::after {
+  content: " ";
+  width: 67px;
+  height: 100px;
+
+  position: absolute;
+  left: 138px;
+  top: 145px;
+
+  background-image: url("../img/icon-map-pin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts__write {
+  margin-top: 39px;
+  margin-left: 30px;
+}
