@@ -6,6 +6,7 @@
   background-color: rgb(251, 251, 251);
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .hero__item {
@@ -73,4 +74,58 @@
 
   background-image: url("../img/icon-toy.svg");
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-top: -54px;
+    border-top: 1px solid rgb(236, 236, 236);
+  }
+
+  .hero__text {
+    padding: 104px 50px 365px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .hero__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero__link {
+    padding: 30px 167px 36px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .hero {
+    margin-top: -42px;
+  }
+
+  .hero__text {
+    padding: 0;
+    padding-top: 160px;
+    padding-bottom: 351px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .hero__list {
+    margin: 0 100px;
+
+    width: 1050px;
+  }
+
+  .hero__item {
+    width: 50%;
+  }
+
+  .hero__link {
+    padding: 30px 370px 30px 36px;
+  }
 }

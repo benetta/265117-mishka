@@ -56,3 +56,18 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: 1250px) {
+  .main-nav {
+    padding: 0 100px;
+    justify-content: space-between;
+  }
+
+  .main-nav__sub-text {
+    font-size: 17px;
+    line-height: 30px;
+    order: 4;
+    margin: 0;
+    margin-top: 12px;
+  }
+}

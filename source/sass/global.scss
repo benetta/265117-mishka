@@ -25,3 +25,9 @@ a {
     max-width: 768px;
   }
 }
+
+@media (min-width: 1250px) {
+  body {
+    max-width: 1250px;
+  }
+}

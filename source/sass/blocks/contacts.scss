@@ -57,3 +57,61 @@
   margin-top: 39px;
   margin-left: 30px;
 }
+
+
+@media (min-width: 768px) {
+  .contacts {
+    padding: 0;
+    margin-top: 45px;
+  }
+
+  .contacts__container {
+    position: relative;
+    padding: 0 50px;
+  }
+
+  .contacts__container::after {
+    content: " ";
+    width: 47px;
+    height: 81px;
+
+    position: absolute;
+    top: 0;
+    right: 50px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .contacts__list tbody {
+    display: flex;
+  }
+
+  .contacts__list tr {
+    width: 50%;
+  }
+
+  .contacts__map {
+    background-color: rgb(236, 236, 236);
+    height: 457px;
+  }
+
+  .contacts__write {
+    margin: 55px auto;
+    width: 230px;
+  }
+}

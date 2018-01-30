@@ -38,25 +38,27 @@
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="GET">
 
         <fieldset class="form__wrapper">
-          <div class="form__flex-container">
+          <div class="form__flex-container flex-container">
             <legend class="form__title">Тип</legend>
-            <label class="form__label form__label--ticks">
-              <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
-              <span class="form__radio"></span>
-              Аксессуар для интерьера
-            </label>
-            <label class="form__label form__label--ticks">
-              <input type="radio" name="type" value="toy" class="visually-hidden">
-              <span class="form__radio"></span>
-              Детская игрушка
-            </label>
+            <div class="flex-container__flex-column">
+              <label class="form__label form__label--ticks">
+                <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
+                <span class="form__radio"></span>
+                Аксессуар для интерьера
+              </label>
+              <label class="form__label form__label--ticks">
+                <input type="radio" name="type" value="toy" class="visually-hidden">
+                <span class="form__radio"></span>
+                Детская игрушка
+              </label>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="form__wrapper">
-          <div class="form__flex-container">
+          <div class="form__flex-container flex-container">
             <legend class="form__title">Цвет</legend>
-            <div class="form__flex-column">
+            <div class="flex-container__flex-column">
               <label class="form__label form__label--ticks">
                 <input type="checkbox" name="white" value="white" class="visually-hidden" checked>
                 <span class="form__checkbox"></span>
@@ -73,7 +75,7 @@
                 «Тиффани»
               </label>
             </div>
-            <div class="form__flex-column">
+            <div class="flex-container__flex-column">
               <label class="form__label form__label--ticks">
                 <input type="checkbox" name="black" value="black" class="visually-hidden">
                 <span class="form__checkbox"></span>
@@ -94,21 +96,24 @@
         </fieldset>
 
         <fieldset class="form__wrapper">
-          <legend class="form__title">ФИО</legend>
-          <label class="form__label">
-            <span class="form__personal">Имя:</span>
-            <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required>
-          </label>
-          <label class="form__label">
-            <span class="form__personal">Фамилия:</span>
-            <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required>
-          </label>
-          <label class="form__label">
-            <span class="form__personal">Отчество:</span>
-            <input class="form__text" type="text" name="auth-fathers-name" placeholder="Отчество, если желаете">
-          </label>
+          <div class="form__flex-container flex-container">
+            <legend class="form__title">ФИО</legend>
+            <div class="flex-container__flex-column">
+            <label class="form__label">
+              <span class="form__personal">Имя:</span>
+              <input class="form__text" type="text" name="auth-name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label class="form__label">
+              <span class="form__personal">Фамилия:</span>
+              <input class="form__text" type="text" name="auth-surname" placeholder="Укажите фамилию*" required>
+            </label>
+            <label class="form__label">
+              <span class="form__personal">Отчество:</span>
+              <input class="form__text" type="text" name="auth-fathers-name" placeholder="Отчество, если желаете">
+            </label>
+            </div>
+          </div>
         </fieldset>
-
         <div class="form__wrapper">
           <label class="form__title form__title--line" for="user-phone">Тел</label>
           <input class="form__text" id="user-phone" type="text" placeholder="+7 XXX XX XX*" required>

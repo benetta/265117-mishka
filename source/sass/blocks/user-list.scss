@@ -48,3 +48,16 @@
     min-width: 80px;
   }
 }
+
+@media (min-width: 1250px) {
+  .user-list {
+    order: 2;
+    width: 350px;
+    margin: 0;
+  }
+
+  .user-list__list-item a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

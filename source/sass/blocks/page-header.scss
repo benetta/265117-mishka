@@ -9,3 +9,9 @@
     order: 0;
   }
 }
+
+@media (min-width: 1250px) {
+  .page-header__logo {
+    order: 1;
+  }
+}
