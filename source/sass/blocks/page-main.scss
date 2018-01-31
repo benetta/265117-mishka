@@ -42,3 +42,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: 1250px) {
+  .page-main__title-wrapper {
+    min-height: 255px;
+  }
+}

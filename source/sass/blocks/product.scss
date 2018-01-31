@@ -86,3 +86,24 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1250px) {
+  .product {
+    flex-direction: column;
+    margin-right: 48px;
+    margin-bottom: 0;
+
+    width: 316px;
+  }
+
+  .product:last-child {
+    margin-right: 0;
+  }
+
+  .product__text-wrapper {
+    width: auto;
+    height: 100%;
+    margin-left: 0;
+    padding-right: 32px;
+  }
+}

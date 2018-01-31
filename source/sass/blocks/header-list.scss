@@ -6,13 +6,13 @@
   list-style: none;
 }
 
-.header-list__list-item,
-.user-list__list-item {
+.header-list__item,
+.user-list__item {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.header-list__list-item a,
-.user-list__list-item a {
+.header-list__item a,
+.user-list__item a {
   display: block;
 
   padding-top: 28px;
@@ -30,12 +30,12 @@
     width: auto;
   }
 
-  .header-list__list-item {
+  .header-list__item {
     border-bottom: none;
     width: 167px;
   }
 
-  .header-list__list-item a {
+  .header-list__item a {
     padding: 0;
     padding-top: 20px;
 
@@ -49,22 +49,22 @@
     width: auto;
   }
 
-  .header-list__list-item {
+  .header-list__item {
     border-bottom: none;
     width: auto;
   }
 
-  .header-list__list-item:first-child {
+  .header-list__item:first-child {
     border-right: 1px solid rgb(236, 236, 236);
   }
 
-  .header-list__list-item a {
+  .header-list__item a {
     padding: 32px 35px 32px 0;
 
     font-size: 17px;
   }
 
-  .header-list__list-item:last-child a {
+  .header-list__item:last-child a {
     padding-left: 35px;
     padding-right: 0;
   }

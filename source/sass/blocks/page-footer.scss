@@ -24,3 +24,9 @@
     width: 111px;
   }
 }
+
+@media (min-width: 1250px) {
+  .page-footer__container {
+    padding: 50px 100px;
+  }
+}

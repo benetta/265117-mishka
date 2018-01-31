@@ -1,3 +1,9 @@
+.main-nav {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
 
 .main-nav__toggle {
   border: none;
@@ -9,18 +15,9 @@
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
 
-  font-size: 0;
-
   position: absolute;
   top: 32px;
   right: 30px;
-}
-
-.main-nav {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .main-nav__list {

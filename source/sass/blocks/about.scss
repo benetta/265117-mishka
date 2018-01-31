@@ -108,9 +108,9 @@
   .about__list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    height: 430px;
+    min-height: 415px;
   }
 
   .about__item {
@@ -134,5 +134,27 @@
 
   .about__item:nth-child(5) {
     padding-right: 0;
+  }
+
+  /* ORDER */
+
+  .about__item:nth-child(4) {
+    order: 1;
+  }
+
+  .about__item:nth-child(2) {
+    order: 2;
+  }
+
+  .about__item:nth-child(5) {
+    order: 3;
+  }
+
+  .about__item:nth-child(3) {
+    order: 4;
+  }
+
+  .about__item:nth-child(6) {
+    order: 5;
   }
 }
