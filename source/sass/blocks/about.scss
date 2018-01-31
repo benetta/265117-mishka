@@ -132,10 +132,6 @@
     padding-right: 70px;
   }
 
-  .about__item:nth-child(5) {
-    padding-right: 0;
-  }
-
   /* ORDER */
 
   .about__item:nth-child(4) {
@@ -148,6 +144,7 @@
 
   .about__item:nth-child(5) {
     order: 3;
+    padding-right: 0;
   }
 
   .about__item:nth-child(3) {
