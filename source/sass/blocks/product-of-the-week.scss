@@ -49,6 +49,8 @@
   .product-of-the-week__flex-container {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
   }
 
   .product-of-the-week__flex-container--title {
@@ -58,8 +60,11 @@
   }
 
   .product-of-the-week__flex-container--content {
-    width: 50%;
-    align-self: flex-start;
+    padding-bottom: 120px;
+  }
+
+  .product-of-the-week__flex-container--price {
+    margin-top: -120px;
   }
 
   .product-of-the-week__title {
@@ -104,6 +109,8 @@
 @media (min-width: 1250px) {
   .product-of-the-week {
     margin-top: 70px;
-    padding: 0 100px;
+    margin: 70px 100px 0;
+    padding: 0;
+    width: 1050px;
   }
 }
