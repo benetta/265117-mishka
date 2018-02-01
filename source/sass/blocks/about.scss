@@ -91,3 +91,67 @@
   height: 32px;
   background-image: url("../img/icon-feature-gift.svg");
 }
+
+@media (min-width: 768px) {
+  .about {
+    padding: 0 50px;
+    padding-top: 50px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 415px;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-right: 50px;
+  }
+
+  .about__content {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item:first-child {
+    padding-right: 120px;
+  }
+
+  .about__item:nth-child(2),
+  .about__item:nth-child(3) {
+    padding-right: 70px;
+  }
+
+  /* ORDER */
+
+  .about__item:nth-child(4) {
+    order: 1;
+  }
+
+  .about__item:nth-child(2) {
+    order: 2;
+  }
+
+  .about__item:nth-child(5) {
+    order: 3;
+    padding-right: 0;
+  }
+
+  .about__item:nth-child(3) {
+    order: 4;
+  }
+
+  .about__item:nth-child(6) {
+    order: 5;
+  }
+}

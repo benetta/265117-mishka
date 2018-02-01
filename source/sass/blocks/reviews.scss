@@ -14,3 +14,38 @@
   font-size: 15px;
   line-height: 30px;
 }
+
+@media (min-width: 768px) {
+  .reviews {
+    margin-top: 62px;
+    padding: 0 50px;
+    padding-top: 85px;
+    padding-bottom: 136px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    margin-bottom: 53px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    order: -2;
+    width: 50%;
+  }
+
+  .reviews_new {
+    order: -1;
+    align-self: baseline;
+
+    width: 175px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin-bottom: 65px;
+  }
+}

@@ -55,3 +55,55 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+  }
+
+  .product__text-wrapper {
+    width: 50%;
+    margin-left: auto;
+    padding-right: 32px;
+  }
+
+  .product__title {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .product__description {
+    font-size: 15px;
+  }
+
+  .product__order {
+    margin-top: auto;
+    margin-bottom: 27px;
+    padding-top: 20px;
+  }
+
+  .product__price {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product {
+    flex-direction: column;
+    margin-right: 48px;
+    margin-bottom: 0;
+
+    width: 316px;
+  }
+
+  .product:last-child {
+    margin-right: 0;
+  }
+
+  .product__text-wrapper {
+    width: auto;
+    height: 100%;
+    margin-left: 0;
+    padding-right: 32px;
+  }
+}

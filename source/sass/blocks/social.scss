@@ -32,3 +32,28 @@
 .social__link--tw {
   background-image: url("../img/icon-twitter.svg");
 }
+
+@media (min-width: 768px) {
+  .social {
+    margin-left: 133px;
+    padding-bottom: 0;
+    max-width: unset;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social__item {
+    margin-right: 40px;
+  }
+
+  .social__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .social {
+    margin-left: auto;
+  }
+}

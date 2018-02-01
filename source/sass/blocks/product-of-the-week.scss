@@ -1,0 +1,115 @@
+
+.product-of-the-week {
+  padding: 28px 30px 0;
+}
+
+.product-of-the-week__title {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product-of-the-week__hit {
+  color: rgb(99, 209, 187);
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-of-the-week__description {
+  margin-top: 22px;
+
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.product-of-the-week__price {
+  margin-bottom: 27px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .product-of-the-week {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-of-the-week__flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .product-of-the-week__flex-container--title {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .product-of-the-week__flex-container--content {
+    padding-bottom: 120px;
+  }
+
+  .product-of-the-week__flex-container--price {
+    margin-top: -120px;
+  }
+
+  .product-of-the-week__title {
+    font-size: 43px;
+    line-height: 50px;
+    flex-basis: 75%;
+    margin-bottom: 50px;
+  }
+
+  .product-of-the-week__hit {
+    max-width: 100px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+
+    text-align: center;
+    align-self: center;
+  }
+
+  .product-of-the-week__description {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-right: 40px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-of-the-week__image {
+    max-width: 50%;
+  }
+
+  .product-of-the-week__price {
+    padding-left: 74px;
+    text-align: left;
+  }
+
+  .product-of-the-week__order {
+    width: 293px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-of-the-week {
+    margin: 70px 100px 0;
+    padding: 0;
+    width: 1050px;
+  }
+}

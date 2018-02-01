@@ -35,3 +35,22 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__toggles {
+    width: 25%;
+    border: none;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .slider__toggle--prev {
+    border: 0;
+  }
+}

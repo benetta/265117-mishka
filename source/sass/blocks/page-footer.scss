@@ -6,3 +6,27 @@
 .page-footer__container {
   padding: 25px 30px;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer__container {
+    padding: 50px 50px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 111px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-footer__container {
+    padding: 50px 100px;
+  }
+}

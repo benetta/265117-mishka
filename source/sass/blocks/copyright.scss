@@ -24,3 +24,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    padding-top: 0;
+    border: none;
+
+    justify-content: flex-end;
+  }
+}
