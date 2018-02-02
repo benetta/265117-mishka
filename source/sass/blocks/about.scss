@@ -155,3 +155,14 @@
     order: 5;
   }
 }
+
+@media (min-width: 1150px) {
+  .about {
+    margin: 0 50px;
+    padding: 65px 177px 0;
+  }
+
+  .about__item:nth-child(6) {
+    padding-right: 60px;
+  }
+}

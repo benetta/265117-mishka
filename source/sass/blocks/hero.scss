@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .hero {
     margin-top: -42px;
   }
@@ -116,9 +116,8 @@
   }
 
   .hero__list {
-    margin: 0 100px;
-
     width: 1050px;
+    margin: 0 50px;
   }
 
   .hero__item {

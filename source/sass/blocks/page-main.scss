@@ -43,8 +43,17 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .page-main__title-wrapper {
     min-height: 255px;
+  }
+
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__description {
+    padding: 0 225px;
   }
 }

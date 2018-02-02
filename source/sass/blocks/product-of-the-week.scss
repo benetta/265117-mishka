@@ -106,10 +106,56 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .product-of-the-week {
-    margin: 70px 100px 0;
+    margin: 70px 50px 0;
     padding: 0;
+    padding-top: 60px;
+    padding-bottom: 96px;
     width: 1050px;
+  }
+
+  .product-of-the-week__flex-container {
+    padding-left: 177px;
+    align-self: flex-start;
+  }
+
+  .product-of-the-week__flex-container--title {
+    flex-basis: 702px;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .product-of-the-week__flex-container--price {
+    margin-top: -127px;
+  }
+
+  .product-of-the-week__title {
+    flex-basis: unset;
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0;
+  }
+
+  .product-of-the-week__hit {
+    width: 177px;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+  .product-of-the-week__description {
+    padding-right: 50px;
+  }
+
+  .product-of-the-week__image {
+    margin-top: -170px;
+    z-index: -1;
+  }
+
+  .product-of-the-week__price {
+    font-size: 20px;
   }
 }
