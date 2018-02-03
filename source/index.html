@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -143,8 +143,8 @@
             </tr>
           </table>
         </div>
-        <div class="contacts__map">
-          <img class="contacts__map-img" src="img/map-mobile@1x.jpg" alt="адрес: г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101">
+        <div class="contacts__map" id="map">
+          <!-- <img class="contacts__map-img" src="img/map-mobile@1x.jpg" alt="адрес: г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101"> -->
         </div>
         <a href="#" class="contacts__write btn">Напишите нам</a>
       </section>
@@ -173,5 +173,10 @@
       </div>
     </footer>
 
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+  <script
+    src="js/myMap.js" type="text/javascript"></script>
   </body>
 </html>
