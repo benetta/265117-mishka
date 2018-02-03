@@ -1,15 +1,13 @@
 .page-main__title-wrapper {
-  margin-bottom: 30px;
   min-height: 177px;
   background-color: rgb(241, 241, 241);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .page-main__title {
   margin: 0;
+  padding-top: 70px;
   font-size: 27px;
   line-height: 30px;
 }
@@ -17,7 +15,7 @@
 /* форма */
 
 .page-main__description {
-  margin-top: 0;
+  margin-top: 20px;
   padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
@@ -26,6 +24,7 @@
 @media (min-width: 768px) {
   .page-main__title-wrapper {
     margin-top: -54px;
+    margin-bottom: 0;
     border-top: 1px solid rgb(236, 236, 236);
 
     min-height: 225px;
@@ -34,9 +33,12 @@
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 92px;
   }
 
   .page-main__description {
+    margin-top: 70px;
+    margin-bottom: 5px;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
@@ -46,6 +48,7 @@
 @media (min-width: 1150px) {
   .page-main__title-wrapper {
     min-height: 255px;
+    margin-top: -45px;
   }
 
   .page-main__title {

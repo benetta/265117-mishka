@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 43px;
+  padding-top: 35px;
   padding-bottom: 39px;
 }
 
@@ -9,7 +9,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -27,7 +27,7 @@
 
 .contacts__key {
   min-width: 76px;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
 }
 
 .contacts__value a {
@@ -54,7 +54,7 @@
 }
 
 .contacts__write {
-  margin-top: 39px;
+  margin-top: 32px;
   margin-left: 30px;
 }
 
@@ -62,7 +62,14 @@
 @media (min-width: 768px) {
   .contacts {
     padding: 0;
-    margin-top: 45px;
+    margin-top: 47px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+    margin-bottom: 55px;
   }
 
   .contacts__container {
@@ -88,13 +95,8 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 25px;
-    margin-bottom: 60px;
-  }
-
-  .contacts__list {
-    width: 100%;
-    font-size: 17px;
+    padding-top: 15px;
+    margin-bottom: 50px;
   }
 
   .contacts__list tbody {
@@ -127,7 +129,7 @@
 
   .contacts__container {
     width: 50%;
-    padding-left: 177px;
+    padding-left: 170px;
     padding-bottom: 52px;
     align-self: flex-start;
   }
@@ -147,8 +149,8 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 62px;
-    margin-bottom: 40px;
+    padding-top: 70px;
+    margin-bottom: 50px;
   }
 
   .contacts__container::after {
