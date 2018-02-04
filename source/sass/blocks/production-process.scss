@@ -1,6 +1,4 @@
 .production-process {
-
-
   display: flex;
   flex-direction: column;
 
@@ -14,7 +12,7 @@
 
   margin: 0;
   padding-left: 90px;
-  padding-top: 26px;
+  padding-top: 20px;
   padding-bottom: 25px;
 
   font-size: 17px;
@@ -27,9 +25,8 @@
   height: 22px;
 
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 40px;
+  top: 34px;
+  left: 33px;
 
   background-image: url("../img/icon-video.svg");
   background-position: center;
@@ -37,9 +34,10 @@
 }
 
 .production-process__description {
-  margin-top: 32px;
-  margin-bottom: 39px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   padding-left: 34px;
+  padding-right: 40px;
 
   font-size: 13px;
   line-height: 24px;
@@ -47,9 +45,8 @@
 
 .production-process__order {
   width: 193px;
+  margin: 0 auto;
   margin-bottom: 33px;
-
-  align-self: center;
 }
 
 @media (min-width: 768px) {
@@ -59,14 +56,22 @@
   }
 
   .production-process__title {
-    order: -1;
     font-size: 20px;
+    padding-top: 35px;
+    padding-left: 105px;
+    padding-bottom: 0;
+  }
+
+  .production-process__title::after {
+    top: 38px;
+    left: 40px;
   }
 
   .production-process__description {
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -74,15 +79,23 @@
 
   .production-process__order {
     width: 584px;
+    margin-left: 40px;
+    margin-bottom: 42px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .production-process {
-    margin: 57px 100px 105px 100px;
-    max-height: 455px;
+    margin: 57px 50px 105px 50px;
 
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .production-process__flex-container {
+    margin-left: auto;
+    margin-top: -280px;
   }
 
   .production-process__video-container {
@@ -94,19 +107,27 @@
   .production-process__title {
     order: 0;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 95px;
+    padding-right: 35px;
     margin-bottom: 40px;
+  }
+
+  .production-process__title::after {
+    top: 45px;
+    left: 0;
   }
 
   .production-process__description {
     padding: 0;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     max-width: 287px;
   }
 
   .production-process__order {
     width: 230px;
     align-self: unset;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }

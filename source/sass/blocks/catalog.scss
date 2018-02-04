@@ -3,16 +3,18 @@
   display: flex;
   flex-direction: column;
 
+  margin-top: 30px;
   padding: 0 30px;
 }
 
 @media (min-width: 768px) {
   .catalog__list {
-    padding: 0 100px;
+    padding: 0 50px;
+    margin-top: 77px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .catalog__list {
     display: flex;
     flex-direction: row;

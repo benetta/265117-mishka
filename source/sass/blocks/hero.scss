@@ -14,7 +14,7 @@
 }
 
 .hero__text {
-  min-height: 283px;
+  min-height: 281px;
   padding: 70px 30px 0;
   text-align: center;
 
@@ -32,7 +32,7 @@
 
 .hero__link {
   display: block;
-  padding: 28px 130px 27px 30px;
+  padding: 25px 130px 30px 30px;
 
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -78,47 +78,58 @@
 
 @media (min-width: 768px) {
   .hero {
-    margin-top: -54px;
+    margin-top: -57px;
     border-top: 1px solid rgb(236, 236, 236);
   }
 
   .hero__text {
-    padding: 104px 50px 365px;
+    min-height: 625px;
+    padding: 153px 50px 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   .hero__list {
+    margin: 0 50px;
+    max-width: 668px;
     display: flex;
     flex-direction: row;
   }
 
+  .hero__item {
+    width: 50%;
+  }
+
   .hero__link {
-    padding: 30px 167px 36px 36px;
+    /*padding: 30px 100px 36px 36px;*/
+    padding-top: 30px;
+    padding-left: 35px;
 
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .hero {
-    margin-top: -42px;
+    margin-top: -45px;
   }
 
   .hero__text {
     padding: 0;
-    padding-top: 160px;
-    padding-bottom: 351px;
+    padding-top: 155px;
+    padding-bottom: 357px;
+    margin: 0 auto;
+
+    max-width: 620px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
   .hero__list {
-    margin: 0 100px;
-
-    width: 1050px;
+    max-width: 1050px;
+    margin: 0 50px;
   }
 
   .hero__item {
