@@ -35,6 +35,14 @@
   border-bottom: 1px solid rgb(98, 209, 186);
 }
 
+.contacts__value a:hover {
+  color: rgb(70, 193, 174);
+}
+
+.contacts__value a:active {
+  opacity: 0.3;
+}
+
 .contacts__map {
   position: relative;
   width: 322px;
@@ -44,9 +52,14 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 322px auto;
+  }
 }
 
-/*.contacts__map::after {
+.contacts__pin {
   content: " ";
   width: 67px;
   height: 100px;
@@ -58,7 +71,7 @@
   background-image: url("../img/icon-map-pin.svg");
   background-position: center;
   background-repeat: no-repeat;
-}*/
+}
 
 .contacts__write {
   margin-top: 32px;
@@ -69,7 +82,12 @@
 @media (min-width: 768px) {
   .contacts {
     padding: 0;
-    margin-top: 47px;
+    padding-top: 62px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: auto 15px;
   }
 
   .contacts__list {
@@ -114,24 +132,42 @@
     width: 50%;
   }
 
-  .contacts__map {
-    width: 768px;
-    height: 457px;
-  }
-
   .contacts__write {
     margin: 55px auto;
     width: 230px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  .contacts__pin {
+    top: 139px;
+    left: 363px;
   }
 }
 
 @media (min-width: 1150px) {
   .contacts {
-    margin: 70px 50px 105px;
+    margin: 0 50px 105px;
     padding: 0;
+    padding-top: 93px;
 
     display: flex;
     flex-flow: row wrap;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: auto 23px;
   }
 
   .contacts__container {
@@ -139,11 +175,6 @@
     padding-left: 170px;
     padding-bottom: 52px;
     align-self: flex-start;
-  }
-
-  .contacts__map {
-    width: 525px;
-    height: 457px;
   }
 
   .contacts__list {
@@ -170,5 +201,22 @@
     margin: 0;
     margin-left: 177px;
     margin-top: -52px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 525px auto;
+    }
+  }
+
+  .contacts__pin {
+    top: 146px;
+    left: 239px;
   }
 }

@@ -8,6 +8,11 @@
   background-color: rgb(231, 231, 231);
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .video__control {
@@ -23,11 +28,42 @@
   background-image: url("../img/icon-play.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.video__control:hover,
+.video__control:focus {
+  transform: scale(1.2);
+  outline: none;
+}
+
+.video__control:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
   .video {
     order: -1;
     min-height: 455px;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .video {
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 }

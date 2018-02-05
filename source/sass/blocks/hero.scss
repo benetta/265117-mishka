@@ -7,6 +7,11 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .hero__item {
@@ -78,8 +83,16 @@
 
 @media (min-width: 768px) {
   .hero {
+    position: relative;
+
     margin-top: -57px;
     border-top: 1px solid rgb(236, 236, 236);
+    background-image: url("../img/hero-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .hero__text {
@@ -101,18 +114,56 @@
   }
 
   .hero__link {
-    /*padding: 30px 100px 36px 36px;*/
     padding-top: 30px;
     padding-left: 35px;
 
     font-size: 20px;
     line-height: 30px;
   }
+
+  .hero__link:hover {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 35px;
+  }
+
+  .hero__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .hero__link--lighter:active::after {
+    opacity: 0.3;
+  }
+
+  .hero__link--darker:active::after {
+    opacity: 0.3;
+  }
+
+  .hero::after {
+    content: " ";
+    width: 100%;
+    height: 22px;
+
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
 }
 
 @media (min-width: 1150px) {
   .hero {
     margin-top: -45px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .hero__text {
@@ -134,9 +185,25 @@
 
   .hero__item {
     width: 50%;
+    position: relative;
   }
 
   .hero__link {
     padding: 30px 370px 30px 36px;
+  }
+
+  .hero::after {
+    content: " ";
+    width: 100%;
+    height: 34px;
+
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
   }
 }

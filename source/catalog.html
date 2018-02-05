@@ -10,7 +10,17 @@
   <header class="page-header">
     <nav class="main-nav">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Mishka - магазин товаров ручной работы">
+        <picture class="page-header__logo-img">
+          <source
+            media="(min-width: 1150px)"
+            srcset="img/logo-desktop.svg">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/logo-tablet.svg">
+          <img
+            src="img/logo-mobile.svg"
+            alt="Mishka - магазин товаров ручной работы">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list header-list">
@@ -39,7 +49,19 @@
 
       <div class="catalog__list">
         <article class="catalog__item product">
-          <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img
+              class="product__image"
+              src="img/photo-hare-mobile@1x.jpg"
+              srcset="img/photo-hare-mobile@2x.jpg 2x"
+              alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="product__text-wrapper">
             <h3 class="product__title">Зайчик-попрыгайчик</h3>
             <p class="product__description">Рост 30 см, вес 200 г</p>
@@ -50,7 +72,19 @@
           </div>
         </article>
         <article class="catalog__item product">
-          <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img
+              class="product__image"
+              src="img/photo-bowl-mobile@1x.jpg"
+              srcset="img/photo-bowl-mobile@2x.jpg 2x"
+              alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="product__text-wrapper">
             <h3 class="product__title">Корзинка для белья</h3>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
@@ -61,7 +95,19 @@
           </div>
         </article>
         <article class="catalog__item product">
-          <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img
+              class="product__image"
+              src="img/photo-toys-mobile@1x.jpg"
+              srcset="img/photo-toys-mobile@2x.jpg 2x"
+              alt="Зайчик-попрыгайчик">
+          </picture>
           <div class="product__text-wrapper">
             <h3 class="product__title">Большая корзинка для игрушек</h3>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
@@ -90,7 +136,7 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="img/logo-mobile.svg" alt="Mishka - магазин товаров ручной работы">
+        <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Mishka - магазин товаров ручной работы">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
