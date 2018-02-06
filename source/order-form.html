@@ -10,7 +10,17 @@
   <header class="page-header">
     <nav class="main-nav">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Mishka - магазин товаров ручной работы">
+        <picture class="page-header__logo-img">
+          <source
+            media="(min-width: 1150px)"
+            srcset="img/logo-desktop.svg">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/logo-tablet.svg">
+          <img
+            src="img/logo-mobile.svg"
+            alt="Mishka - магазин товаров ручной работы">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list header-list">
@@ -144,7 +154,7 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="img/logo-mobile.svg" alt="Mishka - магазин товаров ручной работы">
+        <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Mishka - магазин товаров ручной работы">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
