@@ -77,11 +77,11 @@
     padding-right: 32px;
   }
 
-  .product__text-wrapper:hover {
+  .product:hover .product__text-wrapper {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .product__text-wrapper:active {
+  .product:active .product__text-wrappere {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -150,8 +150,8 @@
     margin-bottom: 0;
   }
 
-  .product__image {
-    max-width: 314px;
+  .product__image img {
+    width: 314px;
   }
 
   .product__order {

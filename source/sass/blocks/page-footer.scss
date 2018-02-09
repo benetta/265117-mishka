@@ -2,13 +2,21 @@
   background-color: rgb(241, 241, 241);
 }
 
-
 .page-footer__container {
   padding: 25px 30px;
 }
 
 .page-footer__logo {
   display: none;
+}
+
+.page-footer__logo:hover .page-footer__logo-img {
+  fill: rgb(70, 193, 174);
+}
+
+.page-footer__logo:active .page-footer__logo-img {
+  fill: rgb(70, 193, 174);
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
