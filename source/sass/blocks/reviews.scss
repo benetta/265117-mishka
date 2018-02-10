@@ -62,8 +62,12 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    margin: 25px 50px 0;
-    padding: 70px 0 132px 177px;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 70px 50px 132px 225px;
+
+    background-position: 50px top;
   }
 
   .reviews__title {

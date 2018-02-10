@@ -16,6 +16,8 @@
 
 @media (min-width: 1150px) {
   .catalog__list {
+    max-width: 1150px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

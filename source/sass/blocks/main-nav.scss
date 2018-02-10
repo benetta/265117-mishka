@@ -19,15 +19,21 @@
   border: none;
   background-color: transparent;
 
-  width: 20px;
-  height: 16px;
+  width: 21px;
+  height: 21px;
 
-  background-image: url("../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   position: absolute;
-  top: 32px;
+  top: 29px;
   right: 30px;
+}
+
+.main-nav__toggle--no-js {
+  display: none;
 }
 
 .main-nav__list {
@@ -62,14 +68,16 @@
     order: 3;
 
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 1150px) {
   .main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 50px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .main-nav__sub-text {
@@ -77,6 +85,7 @@
     line-height: 30px;
     order: 4;
     margin: 0;
+    margin-left: auto;
     margin-top: 15px;
   }
 }

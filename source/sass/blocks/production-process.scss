@@ -86,7 +86,8 @@
 
 @media (min-width: 1150px) {
   .production-process {
-    margin: 57px 50px 105px 50px;
+    max-width: 1050px;
+    margin: 57px auto 105px;
 
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,6 +97,7 @@
   .production-process__flex-container {
     margin-left: auto;
     margin-top: -280px;
+    z-index: 10;
   }
 
   .production-process__video-container {
@@ -105,11 +107,13 @@
   }
 
   .production-process__title {
+    max-width: 285px;
     order: 0;
-    padding: 0;
+    padding-left: 0;
     padding-top: 95px;
-    padding-right: 35px;
-    margin-bottom: 40px;
+    padding-right: 55px;
+    padding-bottom: 280px;
+    z-index: 1;
   }
 
   .production-process__title::after {

@@ -15,13 +15,21 @@ body {
   margin: 0 auto;
 }
 
+.overlay::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+}
+
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
-
-picture {
-  line-height: 0;
 }
 
 @media (min-width: 768px) {
@@ -32,6 +40,6 @@ picture {
 
 @media (min-width: 1150px) {
   body {
-    max-width: 1150px;
+    max-width: 100%;
   }
 }

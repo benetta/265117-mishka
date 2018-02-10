@@ -35,8 +35,10 @@
   border-bottom: 1px solid rgb(98, 209, 186);
 }
 
-.contacts__value a:hover {
+.contacts__value a:hover,
+.contacts__value a:focus {
   color: rgb(70, 193, 174);
+  outline: none;
 }
 
 .contacts__value a:active {
@@ -74,15 +76,26 @@
 }
 
 .contacts__write {
-  margin-top: 32px;
+  margin-top: 37px;
   margin-left: 30px;
 }
 
 
 @media (min-width: 768px) {
   .contacts {
+    position: relative;
     padding: 0;
     padding-top: 62px;
+  }
+
+  .contacts::after {
+    content: " ";
+    width: 768px;
+    height: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-position: top left;
@@ -157,12 +170,24 @@
 
 @media (min-width: 1150px) {
   .contacts {
-    margin: 0 50px 105px;
-    padding: 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+    padding: 0 50px;
     padding-top: 93px;
 
     display: flex;
     flex-flow: row wrap;
+  }
+
+  .contacts::after {
+    content: " ";
+    width: 1050px;
+    height: 23px;
+
+    position: absolute;
+    top: 0;
+    left: 50px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-position: top left;
