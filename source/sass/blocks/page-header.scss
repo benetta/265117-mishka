@@ -15,11 +15,23 @@
   opacity: 0.3;
 }
 
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
+}
+
 @media (min-width: 768px) {
   .page-header__logo {
     order: 0;
     padding-top: 20px;
     padding-bottom: 0;
+
+    align-self: flex-start;
+  }
+
+  .page-header__logo img {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -28,5 +40,10 @@
     order: 1;
     padding-top: 9px;
     padding-bottom: 0;
+  }
+
+  .page-header__logo img {
+    width: 148px;
+    height: 73px;
   }
 }

@@ -78,7 +78,8 @@
   cursor: pointer;
 }
 
-.modal__label input[type="radio"]:hover + .modal__box {
+.modal__label input[type="radio"]:hover + .modal__box,
+.modal__label input[type="radio"]:focus + .modal__box {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
@@ -94,6 +95,16 @@
   color: rgb(255, 255, 255);
 
   cursor: pointer;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background-color: rgb(70, 193, 174);
+  outline: none;
+}
+
+.modal__btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 768px) {

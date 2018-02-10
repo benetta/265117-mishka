@@ -10,7 +10,12 @@
   display: none;
 }
 
-.page-footer__logo:hover .page-footer__logo-img {
+.page-footer__logo:focus {
+  outline: none;
+}
+
+.page-footer__logo:hover .page-footer__logo-img,
+.page-footer__logo:focus .page-footer__logo-img {
   fill: rgb(70, 193, 174);
 }
 
@@ -21,6 +26,8 @@
 
 @media (min-width: 768px) {
   .page-footer__container {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 55px 50px;
 
     display: flex;

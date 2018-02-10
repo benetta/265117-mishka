@@ -32,6 +32,10 @@
   right: 30px;
 }
 
+.main-nav__toggle--no-js {
+  display: none;
+}
+
 .main-nav__list {
   width: 100%;
 }
@@ -64,14 +68,16 @@
     order: 3;
 
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 1150px) {
   .main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 50px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .main-nav__sub-text {
@@ -79,6 +85,7 @@
     line-height: 30px;
     order: 4;
     margin: 0;
+    margin-left: auto;
     margin-top: 15px;
   }
 }

@@ -1,5 +1,13 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .user-list__item {
   position: relative;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .user-list__icon {
@@ -10,7 +18,20 @@
   fill: rgb(35, 31, 32);
 }
 
-.user-list__item a:hover .user-list__icon {
+.user-list__item a {
+  display: block;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 75px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.user-list__item a:hover .user-list__icon,
+.user-list__item a:focus .user-list__icon {
   opacity: 1;
   fill: rgb(99, 209, 187);
 }
@@ -35,6 +56,7 @@
   .user-list__item a {
     padding-left: 30px;
     padding-top: 30px;
+    padding-bottom: 27px;
   }
 
   .user-list__item--cart a {
@@ -62,10 +84,11 @@
     order: 2;
     width: 350px;
     margin: 0;
+    margin-left: auto;
   }
 
   .user-list__item a {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

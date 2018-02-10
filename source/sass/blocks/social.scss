@@ -22,7 +22,12 @@
   fill: rgb(35, 31, 32);
 }
 
-.social__link:hover .social__icon {
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: rgb(70, 193, 174);
 }
 

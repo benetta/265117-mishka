@@ -75,7 +75,7 @@
             alt="Mishka - магазин товаров ручной работы">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list header-list">
         <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="header-list__item"><a>Вязание на заказ</a></li>
@@ -95,6 +95,10 @@
           </a>
         </li>
       </ul>
+      <ul class="main-nav__list goods-list">
+        <li class="goods-list__item"><a href="#">Новые поступления</a></li>
+        <li class="goods-list__item"><a href="#">Распродажа</a></li>
+      </ul>
       <p class="main-nav__sub-text">Бесплатная доставка по России</p>
     </nav>
   </header>
@@ -108,9 +112,9 @@
       <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="GET">
 
-        <fieldset class="form__wrapper">
+        <div class="form__wrapper">
           <div class="form__flex-container flex-container">
-            <legend class="form__title">Тип</legend>
+            <b class="form__title">Тип</b>
             <div class="flex-container__flex-column">
               <label class="form__label form__label--ticks">
                 <input type="radio" name="type" value="accessory" class="visually-hidden" checked>
@@ -124,11 +128,11 @@
               </label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__wrapper">
+        <div class="form__wrapper">
           <div class="form__flex-container flex-container">
-            <legend class="form__title">Цвет</legend>
+            <b class="form__title">Цвет</b>
             <div class="flex-container__flex-column flex-container__flex-column--checkbox">
               <label class="form__label form__label--ticks">
                 <input type="checkbox" name="white" value="white" class="visually-hidden" checked>
@@ -162,11 +166,11 @@
               </label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__wrapper form__wrapper--personal">
+        <div class="form__wrapper form__wrapper--personal">
           <div class="form__flex-container flex-container">
-            <legend class="form__title">ФИО</legend>
+            <b class="form__title">ФИО</b>
             <div class="flex-container__flex-column flex-container__flex-column--personal">
             <label class="form__label">
               <span class="form__personal">Имя:</span>
@@ -182,35 +186,42 @@
             </label>
             </div>
           </div>
-        </fieldset>
-
-        <div class="form__wrapper form__wrapper--no-legend form__wrapper--phone">
-          <label class="form__title form__title--line" for="user-phone">Тел</label>
-          <input class="form__text" id="user-phone" type="tel" placeholder="+7 XXX XX XX*" required>
-          <svg class="form__item" width="25" height="24">
-            <use xlink:href="#icon-phone" width="25" height="24"></use>
-          </svg>
         </div>
 
-        <div class="form__wrapper form__wrapper--no-legend form__wrapper--email">
-          <label class="form__title form__title--line" for="user-email">E-mail</label>
-          <input class="form__text" id="user-email" type="email" placeholder="Ваш Email*" required>
-          <svg class="form__item" width="32" height="32">
-            <use xlink:href="#icon-mail" width="32" height="32"></use>
-          </svg>
+        <div class="form__wrapper form__wrapper--phone">
+          <div class="form__flex-container flex-container">
+            <label class="form__title form__title--line" for="user-phone">Тел</label>
+            <input class="form__text" id="user-phone" type="tel" placeholder="+7 XXX XX XX*" required>
+            <svg class="form__item" width="25" height="24">
+              <use xlink:href="#icon-phone" width="25" height="24"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__wrapper form__wrapper--email">
+          <div class="form__flex-container flex-container">
+            <label class="form__title form__title--line" for="user-email">E-mail</label>
+            <input class="form__text" id="user-email" type="email" placeholder="Ваш Email*" required>
+            <svg class="form__item" width="32" height="32">
+              <use xlink:href="#icon-mail" width="32" height="32"></use>
+            </svg>
+          </div>
         </div>
 
         <div class="form__wrapper form__wrapper--textarea">
-          <label class="form__title form__title--line" for="u-message">Доп</label>
-          <textarea class="form__textarea" id="u-message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="form__flex-container flex-container">
+            <label class="form__title form__title--line" for="u-message">Доп</label>
+            <textarea class="form__textarea" id="u-message" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
 
         <div class="form__wrapper form__wrapper--finish-line">
-          <small class="form__warning">
-            *Поля обязательны для заполнения
-          </small>
-
-          <input class="form__send btn" type="submit" value="Отправить заказ">
+          <div class="form__flex-container flex-container">
+            <small class="form__warning">
+              *Поля обязательны для заполнения
+            </small>
+            <input class="form__send btn" type="submit" value="Отправить заказ">
+          </div>
         </div>
 
       </form>
