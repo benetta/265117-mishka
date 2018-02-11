@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script
+      src="js/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -71,15 +73,15 @@
           <li class="user-list__item user-list__item--search">
             <a href="#">
               <svg class="user-list__icon" width="18px" height="18px">
-                <use xlink:href="#icon-search" width="18px" height="18px"></use>
-              </svg>Поиск по сайту</a>
+                  <use xlink:href="#icon-search" width="18px" height="18px"></use>
+              </svg><span class="user-list__item-text">Поиск по сайту</span></a>
           </li>
           <li class="user-list__item user-list__item--cart">
             <a href="#">
               <svg class="user-list__icon" width="21px" height="18px">
-                <use xlink:href="#icon-cart" width="21px" height="18px"></use>
-              </svg>Корзина: пока пуста
-          </a>
+                  <use xlink:href="#icon-cart" width="21px" height="18px"></use>
+              </svg><span class="user-list__item-text">Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
         <ul class="main-nav__list goods-list">

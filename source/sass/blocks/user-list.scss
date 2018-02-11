@@ -12,10 +12,13 @@
 
 .user-list__icon {
   opacity: 0.2;
-  padding-right: 47px;
   margin-left: -47px;
 
   fill: rgb(35, 31, 32);
+}
+
+.user-list__item-text {
+  padding-left: 26px;
 }
 
 .user-list__item a {
@@ -64,7 +67,6 @@
   }
 
   .user-list__icon {
-    padding-right: 47px;
     margin-left: 0;
   }
 

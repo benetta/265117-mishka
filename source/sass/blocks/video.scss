@@ -1,8 +1,6 @@
 .video {
+  position: relative;
   min-height: 150px;
-
-  display: flex;
-  justify-content: center;
 
   background-image: url("../img/video-mobile@1x.jpg");
   background-color: rgb(231, 231, 231);
@@ -19,7 +17,11 @@
   width: 101px;
   height: 77px;
 
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: -38px;
 
   text-indent: -9999px;
   border: none;
@@ -36,11 +38,23 @@
 .video__control:focus {
   transform: scale(1.2);
   outline: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: -38px;
 }
 
 .video__control:active {
   transform: scale(0.8);
   opacity: 0.3;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: -38px;
 }
 
 @media (min-width: 768px) {

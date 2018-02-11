@@ -170,6 +170,7 @@
 
   .product-of-the-week__title {
     flex-basis: unset;
+    min-width: 527px;
     order: 1;
     font-size: 53px;
     line-height: 57px;
@@ -186,6 +187,8 @@
   .product-of-the-week__description {
     padding-right: 50px;
     margin-bottom: 47px;
+
+    max-width: 350px;
   }
 
   .product-of-the-week picture {

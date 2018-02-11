@@ -31,7 +31,6 @@
 .form__flex-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .form__title {
@@ -162,7 +161,7 @@
 }
 
 .form__text {
-  min-height: 52px;
+  height: 52px;
   width: 100%;
   border: none;
   border-bottom: 2px solid black;
@@ -293,12 +292,11 @@
   .form__flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .form__title {
     width: 25%;
-    height: 100%;
+    height: 52px;
     padding-top: 17px;
   }
 
@@ -361,6 +359,7 @@
 
   .form__send {
     width: 230px;
+    cursor: pointer;
   }
 
   .form__label input[type="radio"] + .form__radio {
