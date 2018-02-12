@@ -14,6 +14,14 @@
   margin-bottom: 5px;
 }
 
+.flex-container__input-wrapper:hover .form__item,
+.flex-container__input-wrapper:focus .form__item,
+.flex-container__input-wrapper:active .form__item {
+  fill: rgb(98, 209, 186);
+  opacity: 1;
+}
+
+
 @media (min-width: 768px) {
   .flex-container {
     width: 100%;
@@ -48,6 +56,15 @@
   .flex-container__flex-column--personal .form__label:not(:last-child) {
     margin-top: 0;
     margin-bottom: 24px;
+  }
+
+  .flex-container__input-wrapper {
+    width: 700px;
+    position: relative;
+  }
+
+  .flex-container__input-wrapper input {
+    width: 100%;
   }
 }
 

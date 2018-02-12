@@ -23,11 +23,11 @@
 
 @media (min-width: 768px) {
   .page-main__title-wrapper {
-    margin-top: -54px;
+    margin-top: -57px;
     margin-bottom: 0;
     border-top: 1px solid rgb(236, 236, 236);
 
-    min-height: 237px;
+    min-height: 240px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-position: bottom center;
@@ -38,7 +38,7 @@
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 92px;
+    padding-top: 95px;
   }
 
   .page-main__description {
@@ -68,5 +68,6 @@
     padding: 0 225px;
     margin: 0 auto;
     margin-top: 104px;
+    margin-bottom: 5px;
   }
 }

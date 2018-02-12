@@ -10,13 +10,13 @@
 @media (min-width: 768px) {
   .catalog__list {
     padding: 0 50px;
-    margin-top: 60px;
+    margin-top: 65px;
   }
 }
 
 @media (min-width: 1150px) {
   .catalog__list {
-    max-width: 1150px;
+    width: 1150px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
