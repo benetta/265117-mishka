@@ -18,11 +18,12 @@
 }
 
 .user-list__item-text {
-  padding-left: 26px;
+  padding-left: 28px;
 }
 
 .user-list__item a {
-  display: block;
+  display: flex;
+  align-items: center;
 
   padding-top: 27px;
   padding-bottom: 27px;

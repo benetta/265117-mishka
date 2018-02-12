@@ -24,6 +24,16 @@
   position: relative;
 }
 
+.form__wrapper--phone .form__title,
+.form__wrapper--email .form__title {
+  margin-bottom: 6px;
+}
+
+.form__wrapper--phone,
+.form__wrapper--email {
+  margin-bottom: 32px;
+}
+
 .form__wrapper--textarea {
   margin-bottom: 0;
 }
@@ -191,11 +201,9 @@
   opacity: 0.2;
 }
 
-.form__wrapper:hover .form__item,
-.form__wrapper:focus .form__item,
-.form__wrapper:active .form__item {
-  fill: rgb(98, 209, 186);
-  opacity: 1;
+.form__wrapper--email .form__item {
+  top: 35px;
+  right: 5px;
 }
 
 .form__textarea {
@@ -255,22 +263,29 @@
     background-color: rgb(241, 241, 241);
   }
 
+  .form__wrapper--phone,
+  .form__wrapper--email {
+    margin-bottom: 0;
+  }
+
   .form__wrapper--phone {
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     padding-top: 49px;
   }
 
   .form__wrapper--email {
     padding-top: 0;
+    padding-bottom: 45px;
   }
 
   .form__item {
-    top: 63px;
-    right: 75px;
+    top: 10px;
+    right: 13px;
   }
 
   .form__wrapper--email .form__item {
     top: 11px;
+    right: 13px;
   }
 
   .form__wrapper--textarea {
@@ -396,6 +411,7 @@
 
   .form__wrapper--email {
     padding-top: 0;
+    padding-bottom: 43px;
   }
 
   .form__wrapper--personal,
@@ -405,11 +421,12 @@
 
   .form__item {
     top: 11px;
-    right: 236px;
+    right: 10px;
   }
 
   .form__wrapper--email .form__item {
-    top: 11px;
+    top: 9px;
+    right: 10px;
   }
 
   .form__wrapper--finish-line {
