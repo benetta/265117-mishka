@@ -30,6 +30,16 @@
   position: absolute;
   top: 29px;
   right: 30px;
+
+  cursor: pointer;
+}
+
+.main-nav__toggle--open {
+  background-image: url("../img/icon-menu-open.svg");
+}
+
+.main-nav__toggle:focus {
+  outline: none;
 }
 
 .main-nav__toggle--no-js {
@@ -38,6 +48,10 @@
 
 .main-nav__list {
   width: 100%;
+}
+
+.main-nav__list--hidden {
+  display: none;
 }
 
 .main-nav__sub-text {
