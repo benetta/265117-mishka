@@ -42,7 +42,7 @@ toggle.classList.remove("main-nav__toggle--no-js");
 toggle.addEventListener("click", function(evt) {
   evt.preventDefault();
 
-  toggle.classList.toggle("main-nav__toggle--open");
+  toggle.classList.toggle("main-nav__toggle--close");
   menu.forEach(function(item) {
     item.classList.toggle("main-nav__list--hidden");
   })

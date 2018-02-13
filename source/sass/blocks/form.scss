@@ -113,7 +113,8 @@
   border: 2px solid rgb(98, 209, 186);
 }
 
-.form__label input[type="radio"]:active + .form__radio {
+.form__label input[type="radio"]:active + .form__radio,
+.form__label input[type="radio"]:disabled + .form__radio {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
@@ -146,7 +147,8 @@
   border: 2px solid rgb(98, 209, 186);
 }
 
-.form__label input[type="checkbox"]:active + .form__checkbox {
+.form__label input[type="checkbox"]:active + .form__checkbox,
+.form__label input[type="checkbox"]:disabled + .form__checkbox {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
