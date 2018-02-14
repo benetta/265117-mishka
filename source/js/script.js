@@ -1,5 +1,3 @@
-// модальное окно
-
 var cart  = document.querySelectorAll(".modal-open");
 var popup = document.querySelector("#modal-order");
 var footer  = document.querySelector("footer");
@@ -13,10 +11,6 @@ cart.forEach(function(item) {
   });
 });
 
-// браузер проверяет это условие, когда читает скрипт - 1 раз, после загрузки всего тела. поскольку ответом на if будет false, этот кусок кода никогда не запускается.
-
-// нужно сделать так, чтобы это условие запускалось каждый раз при открытии окна. Но, если вешать обработчик события на документ, и потом проверять условие, то он перебивает обработчик корзины.
-
 footer.addEventListener("click", function(evt) {
   var isInside = (evt.target === popup);
 
@@ -25,11 +19,6 @@ footer.addEventListener("click", function(evt) {
     footer.classList.remove("overlay");
   }
 });
-
-// if (!popup.classList.contains("modal--hidden")) {
-// }
-
-// меню на JS
 
 var menu = document.querySelectorAll(".main-nav__list");
 var toggle = document.querySelector("#main-nav__button");
