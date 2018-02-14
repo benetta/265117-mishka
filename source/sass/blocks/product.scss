@@ -96,9 +96,10 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .product:active .product__text-wrappere {
+  .product:active .product__text-wrapper {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+
 
   .product__title {
     font-size: 20px;
@@ -115,6 +116,7 @@
   .product__title:active {
     opacity: 0.3;
   }
+
 
   .product__description {
     font-size: 15px;
@@ -146,11 +148,12 @@
 
     width: 316px;
     min-height: 659px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  .product:last-child {
-    margin-right: 0;
-  }
 
   .product__text-wrapper {
     width: auto;

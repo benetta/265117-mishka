@@ -16,15 +16,16 @@
   height: 28px;
 
   font-size: 0;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .social__link .social__icon {
   fill: rgb(35, 31, 32);
 }
 
-.social__link:focus {
-  outline: none;
-}
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
@@ -48,14 +49,14 @@
 
   .social__item {
     margin-right: 35px;
-  }
 
-  .social__item:nth-child(2) {
-    margin-right: 30px;
-  }
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
 
-  .social__item:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

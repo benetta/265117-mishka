@@ -13,15 +13,16 @@
 
   background-color: transparent;
   border: 2px solid rgb(68, 68, 68);
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
-  outline: none;
-}
+  &:hover,
+  &:focus {
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    outline: none;
+  }
 
-.btn:active {
-  color: rgba(255, 255, 255, 0.3);
+  &:active {
+    background-color: rgb(68, 68, 68);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

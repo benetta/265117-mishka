@@ -21,7 +21,7 @@
   line-height: 30px;
 }
 
-.contacts__list tbody {
+.contacts tbody {
   vertical-align: top;
 }
 
@@ -33,17 +33,18 @@
 .contacts__value a {
   padding-bottom: 3px;
   border-bottom: 1px solid rgb(98, 209, 186);
+
+  &:hover,
+  &:focus {
+    color: rgb(70, 193, 174);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.contacts__value a:hover,
-.contacts__value a:focus {
-  color: rgb(70, 193, 174);
-  outline: none;
-}
-
-.contacts__value a:active {
-  opacity: 0.3;
-}
 
 .contacts__map {
   position: relative;
@@ -110,25 +111,34 @@
     margin-bottom: 55px;
   }
 
+  .contacts__list tbody {
+    display: flex;
+  }
+
+  .contacts__list tr {
+    width: 50%;
+  }
+
   .contacts__container {
     position: relative;
     padding: 0 50px;
+
+    &::after {
+      content: " ";
+      width: 47px;
+      height: 81px;
+
+      position: absolute;
+      top: 0;
+      right: 50px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
-  .contacts__container::after {
-    content: " ";
-    width: 47px;
-    height: 81px;
-
-    position: absolute;
-    top: 0;
-    right: 50px;
-
-    background-image: url("../img/icon-flag.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 
   .contacts__title {
     font-size: 43px;
@@ -137,13 +147,6 @@
     margin-bottom: 50px;
   }
 
-  .contacts__list tbody {
-    display: flex;
-  }
-
-  .contacts__list tr {
-    width: 50%;
-  }
 
   .contacts__write {
     margin: 55px auto;
@@ -178,28 +181,34 @@
 
     display: flex;
     flex-flow: row wrap;
+
+    &::after {
+      content: " ";
+      width: 1050px;
+      height: 23px;
+
+      position: absolute;
+      top: 0;
+      left: 50px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: top left;
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
   }
 
-  .contacts::after {
-    content: " ";
-    width: 1050px;
-    height: 23px;
-
-    position: absolute;
-    top: 0;
-    left: 50px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: top left;
-    background-repeat: repeat-x;
-    background-size: auto 23px;
-  }
 
   .contacts__container {
     width: 50%;
     padding-left: 170px;
     padding-bottom: 52px;
     align-self: flex-start;
+
+    &::after {
+      top: 62px;
+      left: 65px;
+    }
   }
 
   .contacts__list {
@@ -217,10 +226,6 @@
     margin-bottom: 50px;
   }
 
-  .contacts__container::after {
-    top: 62px;
-    left: 65px;
-  }
 
   .contacts__write {
     margin: 0;

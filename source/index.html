@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <script
       src="js/picturefill.min.js"></script>
@@ -29,7 +31,7 @@
               alt="Mishka - магазин товаров ручной работы">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button id="main-nav__button" class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list header-list">
           <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="header-list__item"><a href="order-form.html">
@@ -171,7 +173,7 @@
             <button class="slider__toggle slider__toggle--next" type="button">Следующий</button>
           </div>
         </div>
-        <a href="#" class="reviews_new btn">Написать</a>
+        <a href="newreview.html" class="reviews__new btn">Написать</a>
       </section>
 
       <!-- Контакты -->
@@ -194,7 +196,7 @@
         <div class="contacts__map" id="map">
           <span class="contacts__pin"></span>
         </div>
-        <a href="#" class="contacts__write btn">Напишите нам</a>
+        <a href="feedback.html" class="contacts__write btn">Напишите нам</a>
       </section>
     </main>
 

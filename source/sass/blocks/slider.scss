@@ -20,31 +20,32 @@
   text-indent: -9999px;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-right: 1px solid rgb(236, 236, 236);
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.slider__toggle:hover {
-  opacity: 0.6;
-}
-
-.slider__toggle:active,
-.slider__toggle:focus {
-  opacity: 0.3;
-  outline: none;
-}
-
-.slider__toggle--prev {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border-right: 1px solid rgb(236, 236, 236);
-}
-
-.slider__toggle--next {
-  background-image: url("../img/icon-right-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 @media (min-width: 768px) {
   .slider {

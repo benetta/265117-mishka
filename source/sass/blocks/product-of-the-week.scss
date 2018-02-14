@@ -49,43 +49,45 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::after {
+      content: " ";
+      width: 768px;
+      height: 15px;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: 20px bottom;
+      background-repeat: repeat-x;
+      background-size: auto 15px;
+    }
   }
 
-  .product-of-the-week::after {
-    content: " ";
-    width: 768px;
-    height: 15px;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom left;
-    background-repeat: repeat-x;
-    background-size: auto 15px;
-  }
 
   .product-of-the-week__flex-container {
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: flex-start;
+
+    &--title {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &--content {
+      padding-bottom: 120px;
+    }
+
+    &--price {
+      margin-top: -120px;
+    }
   }
 
-  .product-of-the-week__flex-container--title {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .product-of-the-week__flex-container--content {
-    padding-bottom: 120px;
-  }
-
-  .product-of-the-week__flex-container--price {
-    margin-top: -120px;
-  }
 
   .product-of-the-week__title {
     font-size: 43px;
@@ -135,37 +137,38 @@
     padding-top: 53px;
     padding-bottom: 96px;
     width: 1150px;
+
+    &::after {
+      content: " ";
+      width: 1050px;
+      height: 23px;
+
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: bottom left;
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
   }
 
-  .product-of-the-week::after {
-    content: " ";
-    width: 1050px;
-    height: 23px;
-
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom left;
-    background-repeat: repeat-x;
-    background-size: auto 23px;
-  }
 
   .product-of-the-week__flex-container {
     padding-left: 177px;
     align-self: flex-start;
-  }
 
-  .product-of-the-week__flex-container--title {
-    flex-basis: 702px;
-    justify-content: flex-start;
-    margin-bottom: 50px;
-    padding-left: 0;
-  }
+    &--title {
+      flex-basis: 702px;
+      justify-content: flex-start;
+      margin-bottom: 50px;
+      padding-left: 0;
+    }
 
-  .product-of-the-week__flex-container--price {
-    margin-top: -130px;
+    &--price {
+      margin-top: -130px;
+    }
   }
 
   .product-of-the-week__title {

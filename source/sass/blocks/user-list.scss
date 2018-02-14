@@ -32,18 +32,19 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover .user-list__icon,
+  &:focus .user-list__icon {
+    opacity: 1;
+    fill: rgb(99, 209, 187);
+  }
+
+  &:active .user-list__icon {
+    opacity: 0.3;
+    fill: rgb(99, 209, 187);
+  }
 }
 
-.user-list__item a:hover .user-list__icon,
-.user-list__item a:focus .user-list__icon {
-  opacity: 1;
-  fill: rgb(99, 209, 187);
-}
-
-.user-list__item a:active .user-list__icon {
-  opacity: 0.3;
-  fill: rgb(99, 209, 187);
-}
 
 @media (min-width: 768px) {
   .user-list {
@@ -52,33 +53,33 @@
     margin-left: auto;
   }
 
-  .user-list__item {
-    border-bottom: none;
-    border-left: 1px solid rgb(236, 236, 236);
-  }
-
-  .user-list__item a {
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 27px;
-  }
-
-  .user-list__item--cart a {
-    padding-left: 33px;
-  }
-
   .user-list__icon {
     margin-left: 0;
   }
 
-  .user-list__item--search a {
-    width: 80px;
-    font-size: 0;
+  .user-list__item {
+    border-bottom: none;
+    border-left: 1px solid rgb(236, 236, 236);
+
+    &--cart a {
+      padding-left: 33px;
+    }
+
+    &--search a {
+      width: 82px;
+      font-size: 0;
+    }
   }
 
-  .user-list__item a::after {
-    top: 35px;
-    left: 30px;
+  .user-list__item a {
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 33px;
+
+    &::after {
+      top: 35px;
+      left: 30px;
+    }
   }
 }
 

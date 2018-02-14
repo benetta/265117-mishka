@@ -46,47 +46,63 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+
+  &--lighter {
+    background-color: rgb(99, 209, 187);
+  }
+
+  &--darker {
+    background-color: rgb(86, 195, 178);
+  }
+
+  &--lighter::after {
+    content: " ";
+    width: 40px;
+    height: 62px;
+
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%);
+
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+
+  &--darker::after {
+    content: " ";
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: 50%;
+    right: 27px;
+    transform: translateY(-50%);
+
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
 }
 
-.hero__link--lighter {
-  background-color: rgb(99, 209, 187);
-}
-
-.hero__link--darker {
-  background-color: rgb(86, 195, 178);
-}
-
-.hero__link--lighter::after {
-  content: " ";
-  width: 40px;
-  height: 62px;
-
-  position: absolute;
-  top: 50%;
-  right: 36px;
-  transform: translateY(-50%);
-
-  background-image: url("../img/icon-interior.svg");
-  opacity: 0.5;
-}
-
-.hero__link--darker::after {
-  content: " ";
-  width: 60px;
-  height: 60px;
-
-  position: absolute;
-  top: 50%;
-  right: 27px;
-  transform: translateY(-50%);
-
-  background-image: url("../img/icon-toy.svg");
-  opacity: 0.5;
-}
 
 @media (min-width: 768px) {
   .hero {
     position: relative;
+
+    &::after {
+      content: " ";
+      width: 100%;
+      height: 22.7px;
+
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
   }
 
   .hero__container {
@@ -124,40 +140,25 @@
 
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .hero__link:hover,
-  .hero__link:focus {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 35px;
-  }
+    &:hover,
+    &:focus {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 35px;
+    }
 
-  .hero__link:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
 
-  .hero__link--lighter:active::after {
-    opacity: 0.3;
-  }
+    &--lighter:active::after {
+      opacity: 0.3;
+    }
 
-  .hero__link--darker:active::after {
-    opacity: 0.3;
-  }
-
-  .hero::after {
-    content: " ";
-    width: 100%;
-    height: 22px;
-
-    position: absolute;
-    bottom: -11px;
-    left: 0;
-
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: contain;
-    background-repeat: repeat-x;
+    &--darker:active::after {
+      opacity: 0.3;
+    }
   }
 }
 
