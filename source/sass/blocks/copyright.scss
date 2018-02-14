@@ -24,15 +24,15 @@
 .copyright__icon {
   margin-left: 30px;
   fill: rgb(99, 209, 187);
+}
 
-  .copyright__link:hover &,
-  .copyright__link:focus & {
-    fill: rgb(70, 193, 174);
-  }
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: rgb(70, 193, 174);
+}
 
-  .copyright__link:active & {
-    fill: rgb(70, 193, 174);
-  }
+.copyright__link:active .copyright__icon {
+  fill: rgb(70, 193, 174);
 }
 
 @media (min-width: 768px) {

@@ -19,12 +19,11 @@
 
   font-size: 15px;
   line-height: 30px;
-
-  & tbody {
-    vertical-align: top;
-  }
 }
 
+.contacts tbody {
+  vertical-align: top;
+}
 
 .contacts__key {
   min-width: 76px;
@@ -110,14 +109,14 @@
     border-collapse: collapse;
     font-size: 17px;
     margin-bottom: 55px;
+  }
 
-    & tbody {
-      display: flex;
-    }
+  .contacts__list tbody {
+    display: flex;
+  }
 
-    & tr {
-      width: 50%;
-    }
+  .contacts__list tr {
+    width: 50%;
   }
 
   .contacts__container {
@@ -214,12 +213,11 @@
 
   .contacts__list {
     margin: 0;
-
-    & tbody {
-      display: table;
-    }
   }
 
+  .contacts__list tbody {
+    display: table;
+  }
 
   .contacts__title {
     font-size: 53px;

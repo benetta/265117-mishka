@@ -13,13 +13,12 @@
   &:active {
     opacity: 0.3;
   }
-
-  & img {
-    width: 86px;
-    height: 35px;
-  }
 }
 
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
+}
 
 @media (min-width: 768px) {
   .page-header__logo {
@@ -28,11 +27,11 @@
     padding-bottom: 0;
 
     align-self: flex-start;
+  }
 
-    & img {
-      width: 112px;
-      height: 46px;
-    }
+  .page-header__logo img {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -41,10 +40,10 @@
     order: 1;
     padding-top: 9px;
     padding-bottom: 0;
+  }
 
-    & img {
-      width: 148px;
-      height: 73px;
-    }
+  .page-header__logo img {
+    width: 148px;
+    height: 73px;
   }
 }
