@@ -144,12 +144,12 @@
   .product {
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 0;
+    margin-bottom: 57px;
 
     width: 316px;
     min-height: 659px;
 
-    &:last-child {
+    &:nth-child(3) {
       margin-right: 0;
     }
   }

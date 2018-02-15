@@ -42,4 +42,14 @@
 
     justify-content: flex-end;
   }
+
+  .copyright__link {
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .copyright__link {
+    padding-top: 0;
+  }
 }
