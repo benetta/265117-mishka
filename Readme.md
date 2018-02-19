@@ -58,3 +58,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/265117-mishka
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/265117-mishka/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/265117-mishka?type=dev
+Пишу здесь что-то свое
